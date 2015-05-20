@@ -1,0 +1,47 @@
+{
+    "name":"rhymedigital/isotope_gift",
+    "description":"A gift extension for Isotope eCommerce",
+    "keywords": [
+    	"contao", 
+    	"isotope", 
+    	"gift", 
+    	"certificate", 
+    	"card", 
+    	"giftcard"
+    ],
+    "type": "contao-module",
+    "license": "LGPL-3.0+",
+    "authors": [
+        {
+            "name": "Rhyme Digital",
+            "homepage": "http://rhyme.digital"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.2",
+        "contao/core": ">=3.3.0,<4.0.0-dev",
+        "contao-community-alliance/composer-installer": "*",
+        "terminal42/contao-namespace-class-loader":"~1.0",
+        "isotope/isotope-core": ">=1.0.1",
+        "codefog/contao-haste":"~4.3"
+    },
+    "autoload": {
+        "psr-0": {
+            "Rhyme\\": [
+                "library/"
+            ]
+        }
+    },
+    "extra": {
+        "contao": {
+            "sources": {
+                "": "system/modules/isotope_gift"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "preferred-install": "dist"
+    }
+}
